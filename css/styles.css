@@ -1,6 +1,21 @@
+/* цвет основного текста #212121 */
+/* вторичный цвет текста  #F5F5F5; */
+/* белый #FFFFFF  */
+/* акцент #2196F3 */
+/* вторичный цвет фона #F5F4FA; */
+
+:root {
+    --primary-text-color: #F5F5F5;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+    --secondary-bg-color: #F5F4FA;
+  }
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: 212121;
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
     letter-spacing: 0.03em;
 }
 
@@ -10,6 +25,19 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid teal;
+}
+
+.navigation-list {
+    display: inline;
 }
 
 .navigation-list-item {
@@ -24,7 +52,7 @@ a {
     line-height: 31px;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .logo-black {
@@ -43,7 +71,7 @@ a {
 
 .contact-email-link:hover,
 .contact-email-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .contact-tel-link {
@@ -58,7 +86,7 @@ a {
 
 .contact-tel-link:hover,
 .contact-tel-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .navigation-list-link {
@@ -68,12 +96,12 @@ a {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .main-img {
@@ -83,7 +111,7 @@ a {
     left: 0px;
     top: 80px;
     background: #2F303A;
-}
+} 
 
 .main-img-title {
     font-family: Roboto;
@@ -104,7 +132,7 @@ a {
 .modal-button {
     width: 200px;
     height: 50px;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     border: none;
     margin-left: 732px;
     font-family: Roboto;
@@ -135,7 +163,7 @@ a {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .features-list-item-description {
@@ -157,7 +185,7 @@ a {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .areas-of-our-work-item {
@@ -171,7 +199,7 @@ a {
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .team-list-item-name {
@@ -182,7 +210,7 @@ a {
     line-height: 19px;
     /* identical to box height */
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .team-list-item-description {
@@ -245,7 +273,7 @@ a {
     /* identical to box height, or 162% */
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .filter-buttons-list-item-name {
@@ -262,13 +290,13 @@ a {
     align-items: center;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .filter-buttons-list-item-name:hover,
 .filter-buttons-list-item-name:focus {
     color: white;
-    background: #2196F3;
+    background: var(--accent-color);
 }
 
 .developments-list-item-title {
@@ -279,7 +307,7 @@ a {
     line-height: 36px;
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 .developments-list-item-description {
