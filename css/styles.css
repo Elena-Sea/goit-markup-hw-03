@@ -27,10 +27,14 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3 {
+    margin: 0;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid teal;
@@ -49,9 +53,7 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
-    letter-spacing: 0.03em;
+    line-height: 1.19;
     color: var(--accent-color);
 }
 
@@ -79,7 +81,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 }
@@ -94,7 +96,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
@@ -118,8 +120,7 @@ a {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
-    /* or 136% */
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -139,8 +140,7 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 187% */
+    line-height: 1.87;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -160,8 +160,7 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
@@ -171,9 +170,7 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-    letter-spacing: 0.03em;
+    line-height: 1.71;
     color: #757575;
 }
 
@@ -182,9 +179,8 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
@@ -197,8 +193,7 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
+    line-height: 1.17;
     color: var(--title-text-color);
 }
 
@@ -207,9 +202,7 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    letter-spacing: 0.03em;
+    line-height: 1.19;
     color: var(--title-text-color);
 }
 
@@ -218,9 +211,7 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    letter-spacing: 0.03em;
+    line-height: 1.19;
     color: #757575;
 }
 
@@ -241,10 +232,8 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    line-height: 1.71;
+    color: var(--primary-white-color);
 }
 
 .adress-email,
@@ -253,9 +242,7 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-    letter-spacing: 0.03em;
+    line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -269,10 +256,8 @@ a {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 162% */
+    line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
@@ -285,11 +270,9 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 26px;
-    /* identical to box height, or 187% */
+    line-height: 1.87;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
@@ -304,8 +287,7 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 36px;
-    /* identical to box height, or 200% */
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
 }
@@ -315,8 +297,6 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 187% */
-    letter-spacing: 0.03em;
+    line-height: 1.87;
     color: #757575;
 }
