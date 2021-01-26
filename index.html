@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/styles.css">
-</head>
+  </head>
 
 <body>
   
   <!-- шапка сайта -->
-  
   <header class="header">
     <div class="container">
+      <a class="logo" href="/"><span>Web</span><span class="logo-black">Studio</span></a>
+      <!-- навигация -->
       <nav class="navigation">
-        <a class="logo" href="/"><span>Web</span><span class="logo-black">Studio</span></a>
-    
-        <!-- навигация -->
         <ul class="navigation-list">
           <li class="navigation-list-item">
             <a class="navigation-list-link" href="./index.html">Студия</a>
@@ -30,8 +28,10 @@
           <li class="navigation-list-item">
             <a class="navigation-list-link" href="./portfolio.html">Портфолио</a>
           </li>
-        </ul>    
-        <ul class="navigation-list contacts">
+        </ul>   
+      </nav> 
+      <nav class="navigation contacts">  
+        <ul class="navigation-list">
           <li class="navigation-list-item" lang="en">
             <a class="contact-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -56,7 +56,7 @@
     <div class="container">
       <section class="features-block">
         <!-- заголовок Features будет скрыт-->
-        <h2 class="features">Features</h2>
+        <h2 class="visually-hidden">Features</h2>
         <ul class="features-list">
           <li class="features-list-item">
             <h3 class="features-list-item-title">Внимание к деталям</h3>
