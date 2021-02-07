@@ -49,7 +49,6 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid teal;
     text-align: center;
 }
 
@@ -105,7 +104,6 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 
-    outline: 1px solid palevioletred;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -148,8 +146,18 @@ img {
     padding-bottom: 60px;
     background: #2F303A;
 }
-
 .adress {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.adress-text,
+.adress-email,
+.adress-tel {
+    /* padding-bottom: 16px; */
+    display: inline-block;
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
@@ -157,12 +165,13 @@ img {
     color: var(--primary-white-color);
 }
 
+.adress-text {
+    color: var(--primary-white-color);
+}
+
 .adress-email,
 .adress-tel {
-    font-weight: normal;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -170,27 +179,13 @@ img {
     text-align: start;
 }
 
-.adress-email {
-    margin-top: 9px;
-    margin-bottom: 9px;
-}
+
 /* Studio */
-
-
-
 
 
 .main-img {
     text-align: center;
     background: #2F303A;
-    /*  position: absolute; 
-    width: 1600px;
-    height: 600px;*/
-    /* left: 0px;
-    top: 80px;
-    
-    padding-top: 200px;
-    padding-bottom: 280px; */
 } 
 
 .main-img-title {
@@ -204,12 +199,6 @@ img {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
-    /* width: 696px; */
-    
-    /*vmargin-left: 452px;
-    margin-right: 452px;*/
-     
 }
 
 .main-button {
@@ -350,44 +339,43 @@ img {
     height: 38px;
     align-items: stretch;
     justify-content: center;
-    padding: 0px;
-    padding-top: 39px;
+    margin-top: 98px;
+    margin-bottom: 46px;
 }
-/* .filter {
-    display: flex;
-    align-items: center;
-    /* justify-content: center;
-     */
-    padding: 6px 22px 6px 22px;
-} */
+
+.filter-buttons-list-item:not(:last-child) {
+    margin-right: 8px;
+}
 
 .filter-buttons-list-item {
-    box-sizing: content-box;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
 
     color: var(--title-text-color);
     background: #F5F4FA;
-    border-radius: 4px;
+    
 }
 
-.filter-buttons-list-item-name {
+.button {
     /* width: 145px;
     height: 38px; */
     background-color: #F5F4FA;
     border: none;
+    border-radius: 4px;
+    padding: 6px 22px 6px 22px;
+    font-family: inherit;
     font-weight: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.87;
-    /* 
-    text-align: center; */
+    letter-spacing: 0.03em;
+    cursor: pointer;
     color: var(--title-text-color);
 }
 
-.filter-buttons-list-item-name:hover,
-.filter-buttons-list-item-name:focus {
+.button:hover,
+.button:focus {
     color: white;
     background: var(--accent-color);
 }
