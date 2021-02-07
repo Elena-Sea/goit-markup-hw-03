@@ -345,15 +345,21 @@ img {
 
 
 /* Portfolio */
-
-
-.filter {
+.filter-buttons-list {
+    display: flex;
+    height: 38px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0px;
+    padding-top: 39px;
+}
+/* .filter {
     display: flex;
     align-items: center;
     /* justify-content: center;
      */
     padding: 6px 22px 6px 22px;
-}
+} */
 
 .filter-buttons-list-item {
     box-sizing: content-box;
