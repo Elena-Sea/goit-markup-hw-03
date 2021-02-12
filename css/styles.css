@@ -184,6 +184,8 @@ img {
 
 
 .main-img {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background: #2F303A;
 } 
@@ -334,6 +336,8 @@ img {
 
 
 /* Portfolio */
+
+
 .filter-buttons-list {
     display: flex;
     height: 38px;
@@ -357,8 +361,6 @@ img {
 }
 
 .button {
-    /* width: 145px;
-    height: 38px; */
     background-color: #F5F4FA;
     border: none;
     border-radius: 4px;
@@ -405,7 +407,7 @@ img {
 
 .developments-list-item-title {
     margin-bottom: 4px;
-    /* align-self: flex-start; */
+    
 
     font-weight: bold;
     font-size: 18px;
@@ -419,10 +421,11 @@ img {
     font-size: 16px;
     line-height: 1.87;
     color: #757575;
+    text-align: left;
 }
 
 .developments-list-item-name {
     padding: 20px 24px 20px 24px;
     border: 1px solid #EEEEEE;
-    /* display: flex; */
+    text-align: left;
 }
