@@ -183,6 +183,8 @@ header {
 
 .team {
 	background-color: var(--secondary-background-color);
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 
@@ -252,3 +254,4 @@ header {
 .footer-contact {
 	color: rgba(255, 255, 255, 0.6);
 }
+
