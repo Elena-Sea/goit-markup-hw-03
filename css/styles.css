@@ -35,10 +35,7 @@ p {
 	padding-bottom: 94px;
 }
 
-.hero.section {
-	padding-top: 200px;
-	padding-bottom: 200px;
-}
+
 
 .container {
 	width: 1200px;
@@ -51,11 +48,6 @@ p {
 	text-decoration: none;
 	font-style:normal;
 	color: var(--primary-text-color);
-}
-.address-link {
-	text-decoration: none;
-	font-style:normal;
-	color: var(--conditions-subcolor);
 }
 
 .link:hover,
@@ -80,21 +72,20 @@ p {
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.btn-hero {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.87;
-	letter-spacing: 0.06em;
-	color: var(--conditions-subcolor); 
-	background-color: var(--conditions-color);
-	/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-	padding: 10px 32px;
+.title {
+	color: var(--secondary-text-color);
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.no-gap {
+	display: block;
 }
 
 /* шапка */
@@ -170,45 +161,72 @@ header {
 	margin-right: 50px;
 }
 
-/* main */
-.title {
-	color: var(--secondary-text-color);
-	margin-top: 0;
-	margin-bottom: 0;
-}
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
+/* main */
+
+/* hero */
 
 .hero {
 	background-color: var(--tertiary-background-color);	
 	text-align: center;
 }
 
+.hero.section {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+.btn-hero {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+	color: var(--conditions-subcolor); 
+	background-color: var(--conditions-color);
+	padding: 10px 32px;
+}
+
 .title-hero {
 	margin-top: 0;
 	margin-bottom: 30px;
+
+	color: var(--conditions-subcolor);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.4;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--conditions-subcolor);
+	
 }
 
+/* features */
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.features {
+	display: flex;
+}
 
 .feature-item.title {
 	margin-bottom: 10px;
+}
+
+.feature:not(:last-child){
+	margin-right: 30px;
+}
+
+.feature {
+	flex-basis: calc(100%/4);
 }
 
 .feature-item {
@@ -219,27 +237,60 @@ header {
 
 .feature-item-description {
 	line-height: 1.71;
+	font-weight: 400;
 }
 
-.no-gap {
-	display: block;
-}
+/* occupation and team */
 
 .occupation.title,
 .our-team.title {
 	margin-bottom: 50px;
-}
-
-.occupation,
-.our-team {
+	
 	font-size: 36px;
 	line-height: 1.17;
+}
+
+.container.occupations, 
+.container.team-cards {
+	text-align: center;
+}
+
+.ocup-imgs {
+	display: flex;
+}
+
+.ocup-img:not(:last-child){
+	margin-right: 30px;
+}
+
+.ocup-img {
+	flex-basis: calc(100%/3);
 }
 
 .team {
 	background-color: var(--secondary-background-color);
 }
 
+.team-members {
+	display: flex;
+}
+
+.team-member:not(:last-child){
+	margin-right: 30px;
+}
+
+.team-member {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+
+}
+
+.member-description {
+	padding-top: 30px;
+	padding-bottom: 30px; 
+	padding-left: 60px;
+	padding-right: 59px;
+}
 
 .team-member-name {
 	font-weight: 500;
@@ -254,12 +305,13 @@ header {
 	text-align: center;
 }
   
-.img-team.no-gap {
+/* .img-member.no-gap {
 	margin-bottom: 30px;
-}
+} */
 
 /* main portfolio*/
 
+/* filters (код скрытия заголовка в features) */
 
 .container.filters {
 	margin-bottom: 34px;
@@ -272,6 +324,8 @@ header {
 	letter-spacing: 0.03em;
 	padding: 6px 22px;
 }
+
+/* grid */
 
 .products-item-name {
 	font-size: 18px;
@@ -295,16 +349,37 @@ header {
 	background-color: var(--tertiary-background-color);
 }
 
+.container.foot {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
 .studio-footer {
 	color: var(--conditions-subcolor);
 }
 
-.address-content {
+.logo.ftr {
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.address-item:not(:last-child){
+	margin-bottom: 9px;
+}
+
+
+/* .address-content {
 	color: var(--conditions-subcolor);
 	font-style: normal;
-}
+} */
 
 .footer-contact {
 	color: rgba(255, 255, 255, 0.6);
 }
 
+.address-link {
+	text-decoration: none;
+	font-style: normal;
+	color: var(--conditions-subcolor);
+}
