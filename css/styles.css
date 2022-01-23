@@ -29,8 +29,19 @@ p {
 	margin-bottom: 0;
 }
 
+.section {
+	outline: 1px solid palevioletred;
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.hero.section {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
 .container {
-	width: 1230px;
+	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
@@ -40,6 +51,11 @@ p {
 	text-decoration: none;
 	font-style:normal;
 	color: var(--primary-text-color);
+}
+.address-link {
+	text-decoration: none;
+	font-style:normal;
+	color: var(--conditions-subcolor);
 }
 
 .link:hover,
@@ -87,13 +103,29 @@ header {
 	border-bottom: 1px solid #ECECEC;
 }
 
+.container.nav-header {
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+	margin-right: auto;
+}
+
 .logo {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 25px;
+	margin-right: 93px;
+
+	color: var(--conditions-color);
 	text-decoration: none;
 	font-family: Raleway;
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 1.19;
-	color: var(--conditions-color);
+	
 	cursor: default;
 }
 
@@ -101,10 +133,22 @@ header {
 	color: var(--secondary-text-color);
 }
 
+.site-nav {
+	display: flex;
+}
+
+.site-nav > li:not(:last-child){
+	margin-right: 50px;
+}
+
 .site-nav-item {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	
+	color: var(--secondary-text-color);
 	font-weight: 500;
 	line-height: 1.14;
-	color: var(--secondary-text-color);
 	letter-spacing: 0.02em;
 }
 
@@ -113,11 +157,18 @@ header {
 }
 
 .contacts {
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
 	font-weight: 500;
 	line-height: 1.1;
 	letter-spacing: 0.02em;
 }
 
+.contacts > li:not(:last-child){
+	margin-right: 50px;
+}
 
 /* main */
 .title {
@@ -125,9 +176,18 @@ header {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.hidden {
-	visibility: hidden; 
-	margin-bottom: 58px;
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .hero {
@@ -146,11 +206,6 @@ header {
 	color: var(--conditions-subcolor);
 }
 
-.our-features,
-.our-ocupation,
-.portfolio {
-	margin-bottom: 94px;
-}
 
 .feature-item.title {
 	margin-bottom: 10px;
@@ -183,8 +238,6 @@ header {
 
 .team {
 	background-color: var(--secondary-background-color);
-	padding-top: 94px;
-	padding-bottom: 94px;
 }
 
 

@@ -17,10 +17,9 @@
 
     <!-- шапка сайта -->
     <header>
-    
-      <!-- навигация -->
-      <div class="container">
-        <nav>
+      <div class="container nav-header">
+        <!-- навигация -->
+        <nav class="nav">
           <a href="./index.html" class="logo">Web<span class="studio-header">Studio</span></a>
           <ul class="site-nav list">
             <li><a href="./index.html" class="site-nav-item link">Студия</a></li>
@@ -28,7 +27,7 @@
             <li><a href="" class="site-nav-item link">Контакты</a></li>
           </ul>
         </nav>
-      
+    
         <!-- контакты в шапке -->
         <ul class="contacts list">
           <li lang="en"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
@@ -40,11 +39,11 @@
     <!-- main container -->
     <main>
       <!-- Портфолио-->
-      <section class="portfolio">
+      <section class="portfolio section">
         
         <div class="container filters">
           <!-- заголовок Портфолио будет скрыт-->
-          <h2 class="title hidden">Портфолио</h2>
+          <h2 class="title visually-hidden">Портфолио</h2>
           <!-- навигация по фильтрам -->
           <ul class="list">
             <li><button type="button" class="button btn-fltr">Все</button></li>
@@ -113,9 +112,18 @@
       <nav class="container">
         <a href="./index.html" class="logo">Web<span class="studio-footer">Studio</span></a>
         <address class="address">
-          <p class="address-content">г. Киев, пр-т Леси Украинки, 26</p><br>
-          <a lang="en" href="mailto:info@example.com" class="footer-contact link">info@example.com</a><br>
-          <a href="tel:+380991111111" class="footer-contact link">+38 099 111 11 11</a>
+          <ul class="list">
+            <li>
+              <a class="address-link" href="https://goo.gl/maps/2N1WNVQ2svkCa77E6" target="_blank"
+                rel="noopener norefferer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li>
+              <a lang="en" href="mailto:info@example.com" class="footer-contact link">info@example.com</a>
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="footer-contact link">+38 099 111 11 11</a>
+            </li>
+          </ul>
         </address>
       </nav>
     </footer>
